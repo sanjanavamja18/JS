@@ -1,1 +1,2 @@
     console.log("WELCOME TO MY FIRST JS PROGRAMMING");
+    console.log("WELCOME TO MY FIRST JS PROGRAMMING 2");
