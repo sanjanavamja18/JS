@@ -168,7 +168,9 @@ const nameKey = "Name";
 console.log(sana["firstName" + nameKey]);
 
 //prompt function..
-const inter = prompt('what do you want about sanju?choose between firstname,lastname,age,job,frnds');
+const inter = prompt(
+  "what do you want about sanju?choose between firstname,lastname,age,job,frnds"
+);
 console.log(sana[inter]);
 
 if (sana[inter]) {
@@ -291,30 +293,26 @@ while (dice !== 6) {
 }
 
 // coding challange #4
-const calTip = function(bil)
-{
+const calTip = function (bil) {
   return bil <= 50 && bil <= 300 ? bil * 0.15 : bil * 0.2;
-}
-const bils = [22,295,176,440,37,105,10,1100,86,52];
+};
+const bils = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tipps = [];
 const totalls = [];
-for(let i = 0; i < bils.length; i++)
-{
+for (let i = 0; i < bils.length; i++) {
   const topps = calTip(bils[i]);
   tipps.push(topps);
   totalls.push(topps + bils[i]);
 }
-console.log(bils,tipps,totalls);
+console.log(bils, tipps, totalls);
 
-const calcAverage = function(arr)
-{
-  let sum =0 ;
-  for(let i =0;i<arr;i++)
-  {
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr; i++) {
     sum += arr[i];
   }
   return sum / arr.length;
-}
-console.log(calcAverage([2,3,7]));
+};
+console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totalls));
 console.log(calcAverage(tipps));
