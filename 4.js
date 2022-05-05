@@ -28,18 +28,22 @@ const calcTempAmp = function (remp) {
 const amp = calcTempAmp(temp);
 console.log(amp);
 
+/*Debuging with console*/
 const measureKelvin = function () {
   const measurement = {
     type: "temp",
     unit: "celsius",
-    value: prompt("Degree celsius:"),
+    value: Number(prompt("Degree celsius:")),
   };
   console.log(measurement);
-  console.table(measurement);
-
+  console.log(measurement);
+  console.log(measurement.value);
+  //console.warn(measurement.value);
+  //console.error(measurement.value);
   const kelvin = measurement.value + 273;
   return kelvin;
 };
+
 console.log(measureKelvin());
 
 /*Coding challange #1*/
