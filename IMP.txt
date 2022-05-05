@@ -5,9 +5,8 @@
 -section intro
 -setting up prettier and VS code
 -installing nodejs and setting up a devloper enviornment
--use live server 
+-use live server
 -Learnig how to code
 -how to think like devloper
 -fixing errors
 -Debugging  with the console  and  breakpoints
-
