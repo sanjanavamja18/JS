@@ -23,3 +23,10 @@ function calcAge(birthYear) {
 const firstName = "sanju";
 calcAge(2001);
 //console.log(age);
+console.log(me);
+console.log(job);
+console.log(year);
+
+var me = "sanju";
+let job = "enginer";
+const year = 2000;
