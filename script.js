@@ -227,7 +227,7 @@ for (let as = 1; as <= 5; as++) {
   console.log(`My Name is Sanjana Vamja ${as}`);
 }
 
-// lopping aaray,Breaking and cintinuing..
+// lopping aaray,Breaking and continuing..
 const sanu = [
   "sanjana",
   "vamja",
