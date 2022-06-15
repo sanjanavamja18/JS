@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test_3</title>
+  </head>
+  <body>
+    <table border="3" cellpadding="1" align="center">
+      <tr>
+        <th align="start">Name</th>
+        <th align="start">Age</th>
+        <th align="start">Class</th>
+        <th align="start">Marks</th>
+        <th align="start">Attendance</th>
+      </tr>
+      <tbody id="tableData"></tbody>
+    </table>
+  </body>
+  <script>
+    const stud = [
+      {
+        name: "Sanju",
+        age: 21,
+        class: "A",
+        marks: 100,
+        attendance: 90,
+      },
+      {
+        name: "Mansi",
+        age: 20,
+        class: "B",
+        marks: 15,
+        attendance: 70,
+      },
+      {
+        name: "Hemaxi",
+        age: 19,
+        class: "B",
+        marks: 300,
+        attendance: 50,
+      },
+      {
+        name: "Mahek",
+        age: 18,
+        class: "A",
+        marks: 50,
+        attendance: 30,
+      },
+    ];
+
+    stud.sort(function (a, b) {
+      if (a.class < b.class) return -1;
+      if (a.class > b.class) return 1;
+      if (a.marks > b.marks) return -1;
+      if (a.marks < b.marks) return 1;
+      return 0;
+    });
+
+    let m2 = [];
+    let a2 = [];
+    let at2 = [];
+    let at4 = [];
+    stud.forEach((e) => {
+      if (e.class === "A") {
+        let m1 = e.marks;
+        let at1 = e.attendance;
+        m2.push(m1);
+        at2.push(at1);
+      } else if (e.class === "B") {
+        let a1 = e.marks;
+        let att2 = e.attendance;
+        a2.push(a1);
+        at4.push(att2);
+      }
+    });
+
+    let m3 = Math.max(...m2);
+    let m4 = Math.min(...m2);
+    let at3 = Math.max(...at2);
+    let at5 = Math.min(...at2);
+
+    let c1 = Math.max(...a2);
+    let c2 = Math.min(...a2);
+    let c3 = Math.max(...at4);
+    let c4 = Math.min(...at4);
+
+    console.log("maxMarks 0f A :" + m3);
+    console.log("minMarks 0f A:" + m4);
+    console.log("maxAttendence 0f A :" + at3);
+    console.log("minAttendence 0f A:" + at5);
+
+    console.log("maxMarks 0f B :" + c1);
+    console.log("minMarks 0f B:" + c2);
+    console.log("maxAttendence 0f B :" + c3);
+    console.log("minAttendence 0f B:" + c4);
+
+    var s = "<tbody>";
+    for (i = 0; i < stud.length; i++) {
+      s += "<tr>";
+      s += "<td>" + stud[i].name + "</td>";
+      s += "<td>" + stud[i].age + "</td>";
+      s += "<td>" + stud[i].class + "</td>";
+      s += "<td>" + stud[i].marks + "</td>";
+      s += "<td>" + stud[i].attendance + "</td>";
+      s += "</tr>";
+    }
+    s += "</tbody>";
+    document.getElementById("tableData").innerHTML = s;
+  </script>
+</html>
