@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div3</title>
+</head>
+<body>
+</body>
+<script>
+   function div(low, high) {
+        //print string into array..
+        var output = [];
+
+        for (var i = low; i <= high; i++) {
+          //store current no in array..
+          output.push(i);
+
+          // number divide by 3
+          if (i % 3 === 0) {
+            output.push("div3");
+          }
+        }
+
+        // return all numbers and strings
+        return output;
+      }
+
+      console.log(div(3, 12));
+ </script>
+</html>
