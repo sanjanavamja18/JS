@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POST api</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="form" method="post">
+      Name :
+      <input type="text" id="name" name="name" required />
+      <br />
+      <br />
+      Job : <input type="text" id="job" name="job" required />
+      <br />
+      <br />
+      <input type="button" value="Add" onclick="empty()" />
+    </form>
+    <br />
+    <div id="result"></div>
+    <table id="table" border="1">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Job</td>
+          <td>Update</td>
+        </tr>
+      </thead>
+      <tbody id="tb"></tbody>
+    </table>
+  </body>
+  <script src="api.js"></script>
+</html>
