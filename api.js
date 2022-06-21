@@ -51,6 +51,7 @@ const add = () => {
   nm.innerHTML = document.getElementById("name").value;
   jb.innerHTML = document.getElementById("job").value;
   edit.innerHTML = `<a class="edit" id="edit" onClick="edit(this)">Edit</a>`;
+  
   if (name === "" && job === "") {
     alert("Name and Job Required");
     return false;
