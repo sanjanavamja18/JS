@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript function to extract a specified number of characters
+      from a string
+    </title>
+  </head>
+  <body></body>
+  <script>
+    truncate_string = function (str, length) {
+      if (str.constructor === String && length > 0) {
+        return str.slice(0, length);
+      }
+    };
+    console.log(truncate_string("Sanju vamja", 4));
+  </script>
+</html>
